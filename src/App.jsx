@@ -6,6 +6,8 @@ import Navbar from "./Navbar"
 import College from "./College"
 import Class from "./Class"
 import Class2 from "./Class2"
+import Users from "./Users"
+import UserDeatails from "./UserDeatails"
 
 function App() {
   
@@ -17,8 +19,10 @@ function App() {
     <Routes>
       <Route element={<Navbar/>}>
       <Route path="/" element={<Home/>}/>
+      <Route path="/users" element={<Users/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/login" element={<Login/>}/>
+      <Route path="/users/:id" element={<UserDeatails/>}/>
       </Route>
       <Route path="/college" element={<College/>}>
       <Route index element={<Class/>}/>

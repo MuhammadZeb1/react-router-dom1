@@ -14,6 +14,7 @@ function Navbar() {
                     <Link to="/about"><h1>about</h1></Link>
                     <Link to="/login"><h1>login</h1></Link>
                     <Link to="/college"><h1>college</h1></Link>
+                    <Link to="/users"><h1>users</h1></Link>
                 </div>
             </div>
             <Outlet/>
