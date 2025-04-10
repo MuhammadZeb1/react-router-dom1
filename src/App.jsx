@@ -3,6 +3,8 @@ import Home from "./Home"
 import About from "./About"
 import Login from "./Login"
 import Navbar from "./Navbar"
+import College from "./College"
+import Class from "./Class"
 
 function App() {
   
@@ -15,6 +17,9 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/login" element={<Login/>}/>
+      <Route path="/college" element={<College/>}>
+      <Route path="class" element={<Class/>}/>
+      </Route>
       {/* <Route path="/*" element={<h1>4040</h1> */}
       <Route path="/*" element={<Navigate to="/login"/> }/>
     </Routes>
