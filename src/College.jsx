@@ -6,7 +6,11 @@ function College() {
     return (
        <>
         <h1>College</h1>
-        <NavLink to='class'>class</NavLink>
+        <div>
+            <NavLink to='/'>back</NavLink>
+        </div>
+        <NavLink to=''>class</NavLink>
+        <NavLink to='class2'>class2</NavLink>
         <Outlet/>
        </>
     )

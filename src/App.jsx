@@ -5,6 +5,7 @@ import Login from "./Login"
 import Navbar from "./Navbar"
 import College from "./College"
 import Class from "./Class"
+import Class2 from "./Class2"
 
 function App() {
   
@@ -12,13 +13,16 @@ function App() {
   return (
     <>
     <h1 className="bg-amber-700">jjj</h1>
-  <Navbar/>
+  {/* <Navbar/> */}
     <Routes>
+      <Route element={<Navbar/>}>
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/login" element={<Login/>}/>
+      </Route>
       <Route path="/college" element={<College/>}>
-      <Route path="class" element={<Class/>}/>
+      <Route index element={<Class/>}/>
+      <Route path="class2" element={<Class2/>}/>
       </Route>
       {/* <Route path="/*" element={<h1>4040</h1> */}
       <Route path="/*" element={<Navigate to="/login"/> }/>

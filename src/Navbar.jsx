@@ -1,4 +1,5 @@
 import React from 'react'
+import { Outlet } from 'react-router'
 import { Link } from 'react-router'
 
 function Navbar() {
@@ -15,6 +16,7 @@ function Navbar() {
                     <Link to="/college"><h1>college</h1></Link>
                 </div>
             </div>
+            <Outlet/>
         </>
     )
 }
